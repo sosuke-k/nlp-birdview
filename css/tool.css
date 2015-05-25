@@ -1,0 +1,77 @@
+#tool {
+  position: absolute;
+  font-size: 50px;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+}
+#tool .parts {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  line-height: 100px;
+  background: rgba(128, 128, 128, 0.3);
+}
+#eval .behind.parts {
+  box-sizing: border-box;
+  padding-top: 500px;
+}
+#tool span {
+  display: block;
+  position: absolute;
+  width: 1000px;
+  height: 150px;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0;
+  font-size: 30px
+}
+#tool .front, #tool .behind {
+  background: rgba(128, 128, 128, 0.3);
+  width: 1500px;
+  height: 950px;
+}
+#tool .left, #tool .right {
+  background: rgba(164, 128, 128, 0.3);
+  width: 200px;
+  height: 950px;
+}
+#tool .top, #tool .bottom {
+  background: rgba(128, 128, 164, 0.3);
+  width: 1500px;
+  height: 200px;
+}
+
+#tool .front {
+  -webkit-transform: translateZ(100px);
+}
+#tool .behind {
+  -webkit-transform: translateZ(-100px);
+}
+#tool .left {
+  -webkit-transform: rotatey(-90deg) translateZ(750px);
+}
+#tool .right {
+  -webkit-transform: rotatey(90deg) translateZ(750px);
+}
+#tool .top {
+  -webkit-transform: rotateX(90deg) translateZ(475px);
+}
+#tool .bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(475px);
+}
+
+

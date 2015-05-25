@@ -1,0 +1,79 @@
+#res {
+  position: absolute;
+  font-size: 50px;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+}
+#res .parts {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  line-height: 100px;
+  background: rgba(0, 128, 0, 0.3);
+}
+#res .right.parts {
+  box-sizing: border-box;
+  padding-top: 300px;
+}
+#res span {
+  display: block;
+  position: absolute;
+  width: 1000px;
+  height: 150px;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0;
+  font-size: 30px
+}
+#res .front, #res .behind {
+  background: rgba(0, 128, 0, 0.3);
+  width: 450px;
+  height: 1000px;
+}
+#res .left, #res .right {
+  background: rgba(28, 164, 0, 0.3);
+  width: 1000px;
+  height: 1000px;
+}
+#res .top, #res .bottom {
+  background: rgba(0, 164, 28, 0.3);
+  width: 450px;
+  height: 1000px;
+}
+
+#res .front {
+  -webkit-transform: translateZ(500px);
+}
+#res .behind {
+  -webkit-transform: translateZ(-500px);
+}
+#res .left {
+  -webkit-transform: rotatey(-90deg) translateZ(225px);
+}
+#res .right {
+  -webkit-transform: rotatey(90deg) translateZ(225px);
+}
+#res .top {
+  -webkit-transform: rotateX(90deg) translateZ(500px);
+}
+#res .bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(500px);
+}
+
+#res span# {
+  -webkit-transform: translateX(220px) translateY(-100px) translateZ(-150px);
+}

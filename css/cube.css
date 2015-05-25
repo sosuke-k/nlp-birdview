@@ -1,0 +1,75 @@
+.box {
+  position: absolute;
+  font-size: 50px;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+}
+.parts {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  line-height: 100px;
+}
+.red {
+  background: rgba(100, 0, 0, 0.8);
+  -webkit-transform: translateZ(50px);
+  -moz-transform: translateZ(50px);
+}
+.blue {
+  background: rgba(0, 0, 100, 0.8);
+  -webkit-transform: translateZ(-50px);
+  -moz-transform: translateZ(-50px);
+}
+.green {
+  background: rgba(0, 100, 0, 0.8);
+  -webkit-transform: rotateX(-90deg) translateZ(50px);
+  -moz-transform: rotateX(-90deg) translateZ(50px);
+}
+.orange {
+  background: rgba(100, 100, 0, 0.8);
+  -webkit-transform: rotateX(90deg) translateZ(50px);
+  -moz-transform: rotateX(90deg) translateZ(50px);
+}
+.pink {
+  background: rgba(100, 0, 100, 0.8);
+  -webkit-transform: rotatey(90deg) translateZ(50px);
+  -moz-transform: rotatey(90deg) translateZ(50px);
+}
+.gray {
+  background: rgba(100, 100, 100, 0.8);
+  -webkit-transform: rotatey(-90deg) translateZ(50px);
+  -moz-transform: rotatey(-90deg) translateZ(50px);
+}
+/* アニメーションの設定 */
+
+.rotate {
+  -webkit-animation: rotateY 5s linear infinite;
+  -moz-animation: rotateY 5s linear infinite;
+}
+@-webkit-keyframes rotateY {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg)
+  }
+  100% {
+    -webkit-transform: rotateY(360deg) rotateX(360deg)
+  }
+}
+@-moz-keyframes rotateY {
+  0% {
+    -moz-transform: rotateY(0deg) rotateX(0deg)
+  }
+  100% {
+    -moz-transform: rotateY(360deg) rotateX(360deg)
+  }
+}

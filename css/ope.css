@@ -1,0 +1,72 @@
+#ope {
+  position: absolute;
+  font-size: 50px;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+}
+#ope .parts {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  line-height: 100px;
+  background: rgba(0, 0, 128, 0.3);
+}
+#ope span {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 30px
+}
+#ope .front, #ope .behind {
+  background: rgba(0, 0, 128, 0.3);
+  width: 800px;
+  height: 450px;
+}
+#ope .left, #ope .right {
+  background: rgba(28, 0, 164, 0.3);
+  width: 750px;
+  height: 450px;
+}
+#ope .top, #ope .bottom {
+  background: rgba(0, 28, 164, 0.3);
+  width: 800px;
+  height: 750px;
+}
+
+#ope .front {
+  -webkit-transform: translateZ(375px);
+}
+#ope .behind {
+  -webkit-transform: translateZ(-375px);
+}
+#ope .left {
+  -webkit-transform: rotatey(-90deg) translateZ(400px);
+}
+#ope .right {
+  -webkit-transform: rotatey(90deg) translateZ(400px);
+}
+#ope .top {
+  -webkit-transform: rotateX(90deg) translateZ(2225px);
+}
+#ope .bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(225px);
+}
+
+#ope span# {
+  -webkit-transform: translateX(220px) translateY(-100px) translateZ(-150px);
+}
